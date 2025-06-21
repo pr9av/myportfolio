@@ -2,14 +2,22 @@ import React from 'react'
 import Navbar from './components/navbar/navbar'
 import Hero from './components/hero/hero'
 import About from './components/about/about'
+import Services from './components/Services/Services'
+import MyWork from './components/MyWork/MyWork'
 
 
-const App = () => {
+const  App = () => {
   return (
     <div>
       <Navbar/>
       <Hero/> 
-      <About/> 
+      <About/>
+      <Services/>
+      <MyWork/>
+      
+
+
+      
     </div>
   )
 }
