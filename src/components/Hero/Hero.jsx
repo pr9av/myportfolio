@@ -3,7 +3,7 @@ import "./Hero.css";
 import profile_img from "../../assets/profile_img.svg";
 const Hero = () => {
   return (
-    <div className="hero">
+    <div id="home" className="hero">
       <img
         src={profile_img}
         alt="profile_img"
