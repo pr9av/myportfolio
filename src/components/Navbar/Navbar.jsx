@@ -4,10 +4,9 @@ import logo from '../../assets/logo.svg'
 import underline from '../../assets/nav_underline.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import menu_open from '../../assets/menu_open.svg'
-import menu_close from '../../assets/menu_close.svg'
+import menu_close from '../../assets/menu_close.svg'  
 
 const Navbar = () => {
-  
   const [menu,setMenu] = useState("home");
   const menuRef = useRef();
 
@@ -20,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <img src={logo} alt="" style={{ width: '130px', height: 'auto' }}className='logo'/>
+      <img src={logo} alt="" style={{ width: '150px', height: 'auto' }}className='logo'/>
       <img src={menu_open} onClick={openMenu} alt=""style={{ width: '10px', height: 'auto' }}className='nav-mob-open' />
       <ul ref={menuRef} className="nav-menu">
         <img src={menu_close} onClick={closeMenu} alt="" style={{ width: '10px', height: 'auto' }}className="nav-mob-close" />
@@ -34,5 +33,4 @@ const Navbar = () => {
     </div>
   )
 }
-
 export default Navbar
